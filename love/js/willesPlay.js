@@ -136,10 +136,7 @@ $(function() {
 		if (percentage > 50) {
 			$('.otherControl .volume').attr('class', 'volume glyphicon glyphicon-volume-up');
 		}
-		if (percentage > 0 && percentage <= 50) {
-			$('.otherControl .volume').attr('class', 'volume glyphicon glyphicon-volume-down');
-		}
-		if (percentage >= 100) {
+		if (percentage > 0 && percentage <= 50)="" {="" $('.othercontrol="" .volume').attr('class',="" 'volume="" glyphicon="" glyphicon-volume-down');="" }="" if="" (percentage="">= 100) {
 			percentage = 100;
 		}
 		$('.volumewrap .progress-bar').css('height', percentage + '%');
@@ -228,4 +225,4 @@ function formatSeconds(value) {
 		time += sec;
 	}
 	return time;
-}
+}</=>
