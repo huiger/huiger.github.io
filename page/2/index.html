@@ -442,15 +442,14 @@
           
             
               <span class="post-comments-count">
-              <span class="post-meta-divider">|</span>
-              <span class="post-meta-item-icon">
-                <i class="fa fa-comment-o"></i>
-              </span>
-              
-                <a href="/2017/03/27/MarkDown-编辑语法/#SOHUCS" itemprop="discussionUrl">
-                  <span id="url::http://huiger.top/2017/03/27/MarkDown-编辑语法/" class="cy_cmt_count" data-xid="2017/03/27/MarkDown-编辑语法/" itemprop="commentsCount"></span>
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2017/03/27/MarkDown-编辑语法/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2017/03/27/MarkDown-编辑语法/" itemprop="commentCount"></span>
                 </a>
-              
+              </span>
             
           
 
@@ -474,7 +473,7 @@
 
           
 
-        </span></div>
+        </div>
       </header>
     
 
@@ -610,15 +609,14 @@
           
             
               <span class="post-comments-count">
-              <span class="post-meta-divider">|</span>
-              <span class="post-meta-item-icon">
-                <i class="fa fa-comment-o"></i>
-              </span>
-              
-                <a href="/2016/08/03/android-App内监听截图加二维码/#SOHUCS" itemprop="discussionUrl">
-                  <span id="url::http://huiger.top/2016/08/03/android-App内监听截图加二维码/" class="cy_cmt_count" data-xid="2016/08/03/android-App内监听截图加二维码/" itemprop="commentsCount"></span>
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2016/08/03/android-App内监听截图加二维码/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2016/08/03/android-App内监听截图加二维码/" itemprop="commentCount"></span>
                 </a>
-              
+              </span>
             
           
 
@@ -642,7 +640,7 @@
 
           
 
-        </span></div>
+        </div>
       </header>
     
 
@@ -779,15 +777,14 @@
           
             
               <span class="post-comments-count">
-              <span class="post-meta-divider">|</span>
-              <span class="post-meta-item-icon">
-                <i class="fa fa-comment-o"></i>
-              </span>
-              
-                <a href="/2016/06/02/gradlew常用命令/#SOHUCS" itemprop="discussionUrl">
-                  <span id="url::http://huiger.top/2016/06/02/gradlew常用命令/" class="cy_cmt_count" data-xid="2016/06/02/gradlew常用命令/" itemprop="commentsCount"></span>
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2016/06/02/gradlew常用命令/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2016/06/02/gradlew常用命令/" itemprop="commentCount"></span>
                 </a>
-              
+              </span>
             
           
 
@@ -811,7 +808,7 @@
 
           
 
-        </span></div>
+        </div>
       </header>
     
 
@@ -961,15 +958,14 @@
           
             
               <span class="post-comments-count">
-              <span class="post-meta-divider">|</span>
-              <span class="post-meta-item-icon">
-                <i class="fa fa-comment-o"></i>
-              </span>
-              
-                <a href="/2016/05/13/hexo-简单命令发布博客/#SOHUCS" itemprop="discussionUrl">
-                  <span id="url::http://huiger.top/2016/05/13/hexo-简单命令发布博客/" class="cy_cmt_count" data-xid="2016/05/13/hexo-简单命令发布博客/" itemprop="commentsCount"></span>
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2016/05/13/hexo-简单命令发布博客/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2016/05/13/hexo-简单命令发布博客/" itemprop="commentCount"></span>
                 </a>
-              
+              </span>
             
           
 
@@ -993,7 +989,7 @@
 
           
 
-        </span></div>
+        </div>
       </header>
     
 
@@ -1212,7 +1208,7 @@
 
         
 <div class="busuanzi-count">
-  <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 
   
     <span class="site-uv">
@@ -1361,11 +1357,29 @@
 
 
 
-  
-    <script id="cy_cmt_num" src="https://changyan.sohu.com/upload/plugins/plugins.list.count.js?clientId=cytcJAwHh"></script>
-  
 
 
+  
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/valine@1.3.10/dist/Valine.min.js"></script>
+  <script type="text/javascript">
+    var GUEST = ['nick','mail','link'];
+    var guest = 'nick,mail,link';
+    guest = guest.split(',').filter(item=>{
+      return GUEST.indexOf(item)>-1;
+    });
+    new Valine({
+        el: '#comments' ,
+        verify: false,
+        notify: false,
+        appId: 'iaktHX9jvTzRX9aNsLwsfc3v-gzGzoHsz',
+        appKey: 'v8aW6vDVSOAOeKlzyHs5GTVj',
+        placeholder: '走过路过，不留下点什么吗？',
+        avatar:'identicon',
+        guest_info:guest,
+        pageSize:'10' || 10,
+    });
+  </script>
 
 
 
